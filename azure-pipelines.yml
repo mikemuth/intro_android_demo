@@ -7,7 +7,13 @@ trigger:
 - azure_pipelines
 
 pool:
+  name: $(BUILDPOOL)
+  demands:
+  - Agent.Name -equals $(BUILDAGENT)
   vmImage: 'ubuntu-latest'
+
+variables:
+- group: hellomike
 
 steps:
 - task: Gradle@2
