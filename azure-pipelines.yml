@@ -13,7 +13,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- group: hellomike
+- group: mikemuth.intro_android
 
 steps:
 - task: Gradle@2
