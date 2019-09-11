@@ -22,7 +22,6 @@ steps:
     options: '--info'
     tasks: 'build'
     publishJUnitResults: false
-    javaHomeOption: 'JAVA_HOME'
     sonarQubeRunAnalysis: false
 - task: Gradle@2
   inputs:
